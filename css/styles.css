@@ -1,182 +1,187 @@
 :root {
-    --primary-color: #d53e76;
-    --secondary-color: #50c2ab;
-    --dark-grey: #2b2b2b;
-    --text-color-primary: #292E31;
-    --text-color-secondary: #fff;
-    --button-primary-color: #339e81;
-    --button-secondary-color: #EEABC4;
-    --border-bottom-color: #c98ca3;
-    --grid-item-color: rgb(213, 206, 206);
-    --heading-font-weight: 700;
-    --button-shadow-color: rgba(0, 0, 0, 0.3);
+  --primary-color: #d53e76;
+  --secondary-color: #50c2ab;
+  --dark-grey: #2b2b2b;
+  --text-color-primary: #292e31;
+  --text-color-secondary: #fff;
+  --button-primary-color: #339e81;
+  --button-secondary-color: #eeabc4;
+  --border-bottom-color: #c98ca3;
+  --grid-item-color: rgb(213, 206, 206);
+  --heading-font-weight: 700;
+  --button-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-color-primary);
-    background-color: rgb(250, 250, 250);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color-primary);
+  background-color: rgb(250, 250, 250);
 }
 
 h1 {
-    font-size: 30px;
-    font-weight: var(--heading-font-weight);
+  font-size: 30px;
+  font-weight: var(--heading-font-weight);
 }
-  
+
 h2 {
-    font-size: 24px;
-    font-weight: var(--heading-font-weight);
+  font-size: 24px;
+  font-weight: var(--heading-font-weight);
 }
 
 h3 {
-    font-size: 18px;
-    font-weight: var(--heading-font-weight);
+  font-size: 18px;
+  font-weight: var(--heading-font-weight);
 }
 
 a {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
-  
-a:hover, a:focus {
-    text-decoration: none;
+
+a:hover,
+a:focus {
+  text-decoration: none;
 }
-  
+
 a:active {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 button {
-    border: none;
-    font-family: inherit;
-    background-color: var(--button-primary-color);
-    color: var(--text-color-secondary);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid var(--button-shadow-color);
+  border: none;
+  font-family: inherit;
+  background-color: var(--button-primary-color);
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--button-shadow-color);
 }
 
-button:hover, button:focus {
-    cursor: pointer;
-    opacity: 0.8;
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .button__secondary {
-    background-color: var(--button-secondary-color);
-    color: var(--text-color-primary);
+  background-color: var(--button-secondary-color);
+  color: var(--text-color-primary);
 }
 
 .navigation-list__item--active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
 }
 
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-.profile, .contact, .about {
-    max-width: 700px;
-    margin: 0 auto;
+.profile,
+.contact,
+.about {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 2.5px solid var(--border-bottom-color);
-    margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 2.5px solid var(--border-bottom-color);
+  margin-bottom: 100px;
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
 
 .navigation-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .logo {
-    max-width: 145px;
-    border-radius: 6%;
+  max-width: 145px;
+  border-radius: 6%;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
 }
 
 .grid__item {
-    background-color: var(--grid-item-color);
-    padding: 10px;
+  background-color: var(--grid-item-color);
+  padding: 10px;
 }
 
 @media all and (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media all and (max-width: 750px) {
-    .grid {
-        grid-gap: 10px;
-    }
+  .grid {
+    grid-gap: 10px;
+  }
 
-    .grid__item :last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
+  .grid__item :last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
 
-    h1 {
-        font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
 }
 
-.button, button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    background-color: var(--button-primary-color);
-    color: var(--text-color-secondary);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid var(--button-shadow-color);
-    transition: 0.2s opacity;
+.button,
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: var(--button-primary-color);
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid var(--button-shadow-color);
+  transition: 0.2s opacity;
 }
 
 button:hover,
@@ -187,70 +192,75 @@ button:focus,
   opacity: 0.8;
 }
 
-/*Color specific to SVG animation*/
+/* Color specific to SVG animation */
 @keyframes color-change {
-    0% {
-        fill: #edc655;
-    }
-    50% {
-        fill: #fcffad;
-    }
-    100% {
-        fill: #f76414;
-    }
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .heading-work {
-    margin-left: 35px;
+  margin-left: 35px;
 }
 
 a {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 label {
-    width: 100px;
-    display: inline-block;
+  width: 100px;
+  display: inline-block;
 }
 
-input, textarea {
-    width: 40%;
+input,
+textarea {
+  width: 40%;
 }
