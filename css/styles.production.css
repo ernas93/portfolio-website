@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
 
@@ -69,10 +69,16 @@ button:focus {
 }
 
 .profile__portrait {
-  float: left;
+  float: none;
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+@media all and (min-width: 550px) {
+  .profile__portrait {
+    float: left;
+  }
 }
 
 .page-footer {
@@ -90,8 +96,9 @@ button:focus {
 .profile,
 .contact,
 .about {
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
+  padding: 0 20px 10px;
 }
 
 * {
@@ -106,7 +113,16 @@ button:focus {
   width: 100%;
   padding: 20px;
   border-bottom: 2.5px solid #c98ca3;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media all and (min-width: 500px) {
+  .page-header {
+    margin-bottom: 100px;
+  }
 }
 
 .page-header__item {
