@@ -124,7 +124,7 @@ button:hover, button:focus {
 
 .logo {
     max-width: 145px;
-    border-radius: 50%;
+    border-radius: 6%;
 }
 
 .grid {
@@ -244,4 +244,13 @@ button:focus,
 
 a {
     color: var(--primary-color);
+}
+
+label {
+    width: 100px;
+    display: inline-block;
+}
+
+input, textarea {
+    width: 40%;
 }
