@@ -94,6 +94,7 @@ button:focus {
 .about {
   max-width: 700px;
   margin: 0 auto;
+  padding: 0 20px 10px;
 }
 
 * {
@@ -105,7 +106,14 @@ button:focus {
   width: 100%;
   padding: 20px;
   border-bottom: 2.5px solid var(--border-bottom-color);
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+  align-items: flex-start;
+}
+
+@media all and (min-width: 500px) {
+  .page-header {
+    margin-bottom: 100px;
+  }
 }
 
 .page-header__item {
