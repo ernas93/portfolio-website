@@ -13,10 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,100&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/portfolio-website/assets/tota11y.min-86a0ea01.js"></script>
-    <link rel="stylesheet" href="/portfolio-website/assets/tota11y-4c7d725c.css">
+    <script type="module" crossorigin src="/portfolio-website/assets/tota11y.min-04b409ed.js"></script>
+    <link rel="stylesheet" href="/portfolio-website/assets/tota11y-fdfd12a3.css">
   </head>
-
   <body>
     <header class="page-header">
       <img src="/portfolio-website/assets/logo-3fad497b.png" class="page-header__item logo" alt="" />
@@ -54,9 +53,10 @@
     <section class="work">
       <h1 class="heading-work">Work</h1>
       <div class="grid">
+        <!-- PROJECT 1 MEET UP REACT -->
         <div class="grid__item">
           <h2>Meet app</h2>
-          <a href="./img/meet-app-screenshot.png" target="_blank">
+          <a :href="./img/meet-app-screenshot.png" target="_blank">
             <img
               src="/portfolio-website/assets/meet-app-screenshot-6c1ed733.png"
               class="project-img"
@@ -75,6 +75,8 @@
             <li>AWS Lambda</li>
             <li>Google OAuth</li>
             <li>Recharts</li>
+            <li>Jest & React Testing Library</li>
+            <li>Puppeteer</li>
           </ul>
           <p>
             <a href="https://ernas93.github.io/meet_app/" target="_blank"
@@ -87,26 +89,158 @@
             >
           </p>
         </div>
+
+        <!-- PROJECT 2 POKEDEX VANILLA JAVA SCRIPT -->
         <div class="grid__item">
-          <h2>Project number 2</h2>
-          <p>In this project I was responsible for project management.</p>
-          <a href="#">Check my project here</a>
+          <h2>Pokedex</h2>
+          <img
+              src="/portfolio-website/assets/pokedex-screenshot-9c536af0.png"
+              class="project-img"
+              alt="Pokedex screenshot"
+            />
+          <p>
+            My Pokedex. This website shows a list of pokemon and you can click 
+            them to see more details. Pokemon details come from the API pokeapi.
+            It was built with vanilla JavaScript.
+          </p>
+          <p>The technologies that were used for this app are the following:</p>
+          <ul>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <p>
+            <a href="https://ernas93.github.io/poke-dex/" target="_blank"
+              >Link to website</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/ernas93/poke-dex" target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
         </div>
+
+        <!-- PROJECT 3 -->
         <div class="grid__item">
-          <h2>Project number 3</h2>
-          <p>I was responsible for organizing a team event in this project.</p>
+          <h2>Movie API</h2>
+          <img
+              src="/portfolio-website/assets/movie-api-97be38b6.png"
+              class="project-img"
+              alt="API logo"
+            />
+          <p>
+            This is a node.js project built with express which contains the whole 
+            API for the MyFlix Application. The Database with the movies was built 
+            with non-SQL MongoDB.
+          </p>
+          <p>The technologies that were used for this app are the following:</p>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Mongoose (MongoDB)</li>
+          </ul>
+          <p>
+            <a href="https://github.com/ernas93/movie_api" target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
         </div>
+
+        <!-- PROJECT 4 -->
         <div class="grid__item">
-          <h2>Project number 4</h2>
-          <p>In this project I put together a marketing strategy.</p>
+          <h2>MyFlix Client</h2>
+          <img
+              src="/portfolio-website/assets/myflix-client-screenshot-f144c3bb.png"
+              class="project-img"
+              alt="Meet app screenshot"
+            />
+          <p>
+            This application is the front-end of a movie app, including general 
+            information about the movie itself, like the description and genre, 
+            plus the director of the movie, as well as the biography of the director.
+            It also allows users to create a new user, including information about the
+            user, plus allowing the user to change their data, as well as adding or 
+            removing movies from their list of favorites, and allowing them to delete 
+            their account.
+          </p>
+          <p>The technologies that were used for this app are the following:</p>
+          <ul>
+            <li>React</li>
+            <li>SCSS</li>
+            <li>Parcel</li>
+          </ul>
+          <p>
+            <a href="https://erna-myflix.netlify.app/" target="_blank"
+              >Link to website</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/ernas93/myFlix-client" target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
         </div>
+
+        <!-- PROJECT 5 -->
         <div class="grid__item">
-          <h2>Project number 5</h2>
-          <p>For this project I had read a book.</p>
+          <h2>Chit Chat</h2>
+          <img
+              src="/portfolio-website/assets/chit-chat-screenshot-3cef282a.jpeg"
+              class="project-img"
+              alt="Meet app screenshot"
+            />
+          <p>
+            This is a React Native app for a chat application that allows users
+            to chat with each other in real-time. The app is built using Firebase
+            as the backend service provider.
+          </p>
+          <p>The technologies that were used for this app are the following:</p>
+          <ul>
+            <li>React Native</li>
+            <li>Expo</li>
+            <li>Firebase(Firestore, Storage) </li>
+            <li>React Native Gifted Chatt</li>
+            <li>Node.js</li>
+          </ul>
+          <p>
+            <a href="https://github.com/ernas93/chat_app" target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
         </div>
+
+        <!-- PROJECT 6 -->
         <div class="grid__item">
-          <h2>Project number 6</h2>
-          <p>In this project I had to create six new containers.</p>
+          <h2>MyFlix Angular Client</h2>
+          <img
+              src="/portfolio-website/assets/myflix-angular-screenshot-fa07b09d.png"
+              class="project-img"
+              alt="Meet app screenshot"
+            />
+          <p>
+            This is an Angular App which uses the movie api as a backend.
+            With this app you can register or sign in a user and see a list 
+            of movies. The user can also favorite movies.
+            This project was generated with Angular CLI.
+          </p>
+          <p>The technologies that were used for this app are the following:</p>
+          <ul>
+            <li>Angular</li>
+            <li>Typescript</li>
+          </ul>
+          <p>
+            <a href="https://ernas93.github.io/myFlix-Angular-client/" target="_blank"
+              >Link to website</a
+            >
+          </p>
+          <p>
+            <a href="https://github.com/ernas93/myFlix-Angular-client" target="_blank"
+              >See project on GitHub</a
+            >
+          </p>
+        </div>
         </div>
       </div>
     </section>
@@ -114,7 +248,7 @@
     <footer class="page-footer">
       <p>You can find me on</p>
       <div class="social-media">
-        <a href="https://github.com/" target="_blank">
+        <a href="https://github.com/ernas93" target="_blank">
           <img src="/portfolio-website/assets/github_icon-0db4e52c.svg" alt="Github Logo" />
         </a>
         <a href="https://www.linkedin.com/" target="_blank">
