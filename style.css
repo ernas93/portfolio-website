@@ -198,7 +198,7 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--button-primary-color);
+  background-color: var(--primary-color);
   color: var(--text-color-secondary);
   text-decoration: none;
   padding: 10px;
