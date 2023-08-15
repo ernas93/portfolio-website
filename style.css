@@ -22,14 +22,16 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-color-primary);
-  background-color: linear-gradient(357deg, var(--button-secondary-color) 60%, var(--border-bottom-color) 100%);
+  background: linear-gradient(20deg, var(--button-secondary-color) 60%, var(--border-bottom-color) 100%);
   margin: 0;
+  min-height: 100vh;
 }
 
 section {
-  background-color: var(--button-secondary-color);
-  padding: 120px 20px 20px;
-  min-height: 84vh;
+  padding: 0px 20px 20px;
+  min-height: 72vh;
+  max-width: 800px;
+  margin: auto
 }
 
 h1 {
@@ -123,7 +125,7 @@ textarea {
 
 .profile__portrait {
   width: 250px;
-  border-radius: 17%;
+  border-radius: 50%;
 }
 
 .project-img {
@@ -140,9 +142,6 @@ textarea {
 }
 
 .page-header {
-  position: fixed;
-  left: 0;
-  top: 0;
   display: flex;
   width: 100%;
   padding: 20px;
@@ -168,15 +167,15 @@ textarea {
 }
 
 .logo {
-  max-width: 145px;
-  border-radius: 6%;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
+  margin: 0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
 }
 
 .grid__item {
@@ -286,8 +285,4 @@ button:focus,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-.heading-work {
-  margin-left: 35px;
 }
