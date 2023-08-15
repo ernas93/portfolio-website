@@ -12,13 +12,24 @@
   --button-shadow-color: rgba(0, 0, 0, 0.3);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: var(--text-color-primary);
-  background-color: rgb(250, 250, 250);
+  background-color: linear-gradient(357deg, var(--button-secondary-color) 60%, var(--border-bottom-color) 100%);
+  margin: 0;
+}
+
+section {
+  background-color: var(--button-secondary-color);
+  padding: 120px 20px 20px;
+  min-height: 84vh;
 }
 
 h1 {
@@ -66,6 +77,41 @@ button:focus {
   opacity: 0.8;
 }
 
+a {
+  color: var(--primary-color);
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+}
+
+input,
+textarea {
+  width: 40%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-intro > * {
+  min-width: 300px;
+}
+
+.profile-intro h1 {
+  margin-top: 0;
+}
+
 .button__secondary {
   background-color: var(--button-secondary-color);
   color: var(--text-color-primary);
@@ -76,22 +122,14 @@ button:focus {
 }
 
 .profile__portrait {
-  float: none;
   width: 250px;
-  margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 17%;
 }
 
 .project-img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-}
-
-@media all and (min-width: 550px) {
-  .profile__portrait {
-    float: left;
-  }
 }
 
 .page-footer {
@@ -101,37 +139,14 @@ button:focus {
   text-align: center;
 }
 
-.profile,
-.contact,
-.about {
-  max-width: 968px;
-  margin: 0 auto;
-  padding: 0 20px 10px;
-}
-
-.work {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 20px 10px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 2.5px solid var(--border-bottom-color);
-  margin-bottom: 30px;
   align-items: flex-start;
-}
-
-@media all and (min-width: 500px) {
-  .page-header {
-    margin-bottom: 100px;
-  }
 }
 
 .page-header__item {
@@ -275,18 +290,4 @@ button:focus,
 
 .heading-work {
   margin-left: 35px;
-}
-
-a {
-  color: var(--primary-color);
-}
-
-label {
-  width: 100px;
-  display: inline-block;
-}
-
-input,
-textarea {
-  width: 40%;
 }
