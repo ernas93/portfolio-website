@@ -5,9 +5,9 @@
   --text-color-primary: #292e31;
   --text-color-secondary: #fff;
   --button-primary-color: #339e81;
-  --button-secondary-color: #eeabc4;
+  --button-secondary-color: #e9c6d0;
   --border-bottom-color: #c98ca3;
-  --grid-item-color: rgb(213, 206, 206);
+  --grid-item-color: #f1d7de;
   --heading-font-weight: 700;
   --button-shadow-color: rgba(0, 0, 0, 0.3);
 }
@@ -17,25 +17,26 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: var(--text-color-primary);
-  background: linear-gradient(20deg, var(--button-secondary-color) 60%, var(--border-bottom-color) 100%);
+  background: linear-gradient(350deg, var(--button-secondary-color) 60%, var(--border-bottom-color) 100%);
   margin: 0;
   min-height: 100vh;
 }
 
 section {
   padding: 0px 20px 20px;
-  min-height: 72vh;
-  max-width: 800px;
+  min-height: 66vh;
+  max-width: 900px;
   margin: auto
 }
 
 h1 {
-  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 40px;
   font-weight: var(--heading-font-weight);
 }
 
@@ -50,16 +51,12 @@ h3 {
 }
 
 a {
-  color: var(--secondary-color);
+  color: var(--text-color-primary);
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
-}
-
-a:active {
-  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 button {
@@ -77,10 +74,6 @@ button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-
-a {
-  color: var(--primary-color);
 }
 
 label {
@@ -107,7 +100,7 @@ textarea {
 }
 
 .profile-intro > * {
-  min-width: 300px;
+  min-width: 240px;
 }
 
 .profile-intro h1 {
@@ -120,7 +113,7 @@ textarea {
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  font-weight: bold;
 }
 
 .profile__portrait {
@@ -135,10 +128,10 @@ textarea {
 }
 
 .page-footer {
-  clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .page-header {
@@ -151,6 +144,9 @@ textarea {
 .page-header__item {
   flex: 0 1 200px;
 }
+.page-header a {
+  text-decoration: none;
+}
 
 .page-header__item:last-child {
   flex-grow: 1;
@@ -161,54 +157,41 @@ textarea {
   list-style-type: none;
 }
 
+
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
 }
 
 .logo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 40px;
   margin: 0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 
 .grid__item {
   background-color: var(--grid-item-color);
-  padding: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  box-shadow: 1px 1px 7px rgba(0,0,0,0.1);
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media all and (min-width: 500px) and (max-width: 750px) {
+@media all and (max-width: 1024px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 568px) {
   .grid {
-    grid-gap: 10px;
-  }
-
-  .grid__item :last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: 22px;
+    grid-template-columns: 1fr;
   }
 }
+
 
 .button,
 button {
@@ -232,57 +215,29 @@ button:focus,
   opacity: 0.8;
 }
 
-/* Color specific to SVG animation */
-@keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+table  {
+  width: 100%;
 }
 
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+table td {
+  text-align: center;
 }
 
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-
-  to {
-    transform: translate(200px, 50px);
-  }
+.contact {
+  text-align: center;
 }
 
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+.contact-nala {
+  margin: 120px auto;
+  display: block;
+  height: 380px;
+  border-radius: 14px;
 }
 
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    transform: translate(100px, 48px);
-  }
+.social-media a {
+  text-decoration: none;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+.work {
+  max-width: 1024px;
 }
