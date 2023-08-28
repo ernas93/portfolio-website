@@ -3,6 +3,9 @@ import nalaImg from './img/nala2.jpeg';
 
 (() => {
   const nala = document.querySelector('#nala');
+  if (!nala) {
+    return;
+  }
 
   nala.addEventListener('click', () => {
     const img = document.createElement('img');
